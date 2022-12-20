@@ -1,0 +1,770 @@
+  /* =========== flex تكاليف ال ================ */
+
+/* 
+   .parant{
+       padding: 20px;
+       display: flex;
+       flex-direction: row;
+       width:600px;
+       height: 300px;
+       background-color: #ccc;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+   .parant div{
+  width: 180px;
+   background-color: orangered;
+   display: flex;
+   color: #fff;
+   justify-content: center;align-items: center;
+   }
+  .one{
+      order: 6;
+      align-self: end;
+  }
+  .two{
+order: 5;
+  }
+
+  .three{
+    order:2;
+    align-self:flex-start;
+}
+  .four{
+ order:3;
+   
+  }
+
+  .five{
+ order:4;
+  }
+  .sex{
+      order:1;
+  }
+  ======= end Header =========  */
+
+/* 
+  /* التكليف     الابرابع     */
+  /* .parant {
+      padding: 10px;
+      display: flex;
+      width: 600px;
+      height: 300px;
+      flex-direction: column;
+      margin:  50px auto;
+      background-color: #ccc;       
+      justify-content: space-between;         
+  }
+  .parant div{
+      padding: 10px;
+      background-color: rgb(75, 241, 97);
+      display: flex;
+      justify-content: center;align-items: center;
+     flex-basis:60px;
+
+  }
+.parant .one{
+    align-self: end;
+}
+.parant .two{
+    width:300px;
+}
+.parant .three {
+    align-self: end;
+} */ 
+ /* التكليف     الابرابع     */
+  /* /* التكليف     الخامس */
+  /* .parant {
+    padding: 10px;
+    display: flex;
+    width: 600px;
+    height: 300px;
+    background-color: #cdd;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .parant div{
+      width:280px;
+      background-color:orange;
+      color:#fff;
+      font-weight: bold;
+      width:calc(90% / 8);
+      height: 150px;
+      padding: 10px;
+      display: flex;justify-content: center;align-items: center;
+
+
+  }
+  .one{
+      order:2;
+ 
+  }
+  .two{
+      order: 3;
+      align-self: end;
+  }
+  .three{
+      order: 4;
+  }
+  .four{
+order: 1;
+align-self: end;
+  } */
+                    /* التكليف السادس والاخير  */
+/* 
+ .header{
+     margin-top: 10px;
+     display: flex;
+     justify-content: space-between;
+
+ }                   
+ .header .logo{
+     display: flex;
+     justify-content: center;align-items: center;
+     width:10%;
+     background-color: #eee;
+     height: 40px;
+ }
+
+ .header ul.links{
+    background-color: #eee;
+     display: flex;
+     align-items: center;
+     justify-content:flex-end;
+     width:88%;
+     height: 40px;
+     padding: 0px !important;
+     margin: 0px !important;
+     padding-right: 10px !important;
+
+ }
+ul.links li{
+    margin-left: 10px;
+}
+.main-area{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.main-area .content{
+    width: 69%;
+    height: 300px;
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.main-area .Sidebar{
+    width: 30%;
+    height: 300px;
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.footer{
+    margin-top: 20px;
+    display: flex;
+
+}
+.footer .copyright{
+    justify-content: start;
+    align-self: start;
+    width: 50%;
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+
+}
+
+.footer .design{
+    width: 50%;
+    display: flex;
+    justify-content:flex-end;
+    align-self: end;
+    background-color: #eee;
+    padding: 10px;
+}
+.img{
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #eee;
+}
+ .img img{
+     transition: 0.5s;
+     -webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+     -ms-transition: 0.5s;
+     -o-transition: 0.5s;
+     filter:grayscale(100%);
+     -webkit-filter:grayscale(100%);
+}
+.img img:hover{
+    filter:grayscale(0);
+    -webkit-filter:grayscale(0);
+} */
+
+ /* =========== تكاليف ال grid ================ */
+ *{
+    box-sizing: border-box;
+}
+ html{
+     scroll-behavior: smooth;
+ }
+ body{
+     font-family: 'Open Sans';
+
+ }
+ :root{
+     --main:#f0f
+ }
+ul {
+    list-style:none;
+}
+ 
+
+ /* ======================= grid HomeWork ============ */
+/* .layout{
+    background-color: #eee;
+    display: grid;
+    width:800px;
+    height: 500px;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 40px 1fr 40px;
+grid-template-areas: 'head head head head head head head head head head' 
+"section section section section section section section aside aside aside "
+ "footer footer footer footer footer footer footer  footer footer footer ";
+}
+header{
+    background-color: royalblue;
+    padding: 20px;
+    color:#fff;
+    grid-area: head;
+}
+section{
+    background-color:orangered;
+    padding: 20px;
+    color:#fff;
+    grid-area: section; 
+}
+aside{
+    background-color:rgb(13, 35, 53);
+    padding: 20px;
+    color:#fff;
+    grid-area: aside;   
+}
+footer{
+    background-color:rgb(28, 177, 85);
+    padding: 20px;
+    color:#fff;
+    grid-area: footer; 
+}*/
+     /* التكليف الثالث */
+     /* .grid{
+         padding: 20px;
+         background-color: #ddd;
+         display: grid;
+         grid-template-columns: 20px 1fr 1fr 20px;
+         justify-content: space-between;
+         grid-template-rows: 1fr 20px;
+         height: 400px;width: 800px;
+         gap: 10px 10px;
+
+     }
+     .grid div{
+         padding: 5px;
+         background-color: #333;
+         color: #fff;
+         display: flex;justify-content: center;align-items: center;
+     }
+      */
+        /* التكليف الرابع  */
+        /* .grid{
+            padding: 20px;
+            display: grid;
+            background-color: #ddd;
+            width: 800px;height: 400px;
+            grid-template-columns: repeat(4,auto);
+            grid-template-rows: repeat(6,1fr);
+            gap: 10px;
+        }
+        .grid div{
+            background-color: royalblue;
+            color: #fff;
+            display: flex; justify-content:center; align-items: center;
+    
+        }
+        .grid .one{
+            grid-column:span 4;
+           order: 6;
+        }
+        .grid .two {
+            grid-column: span 3;
+            order: 2;
+        }
+        .grid .three{
+            grid-column: span 1;
+            order: 2;
+        }
+        .grid .four {
+            grid-column: span 1;
+            order: 3;
+        }
+        .grid .five{
+            grid-column: span 3;
+            grid-row: span 3;
+            order: 3;
+        }
+        .grid .sex{
+            grid-column: span 1;
+            order: 3;
+
+        }
+        .grid .seven{
+            grid-column: span 1;
+            order: 3;
+        }
+        .grid .eight{
+            grid-column: span 4;
+            order: 1;
+        }  */
+
+        /* التكليف الخامس  */
+         /* .grid{
+            padding: 20px;
+            display: grid;
+            background-color: #ddd;
+            width: 800px;height: 400px;
+            justify-content: space-between;
+            gap: 10px;
+            grid-template-columns: repeat(2,380px);
+            grid-template-rows: repeat(2,30px);
+           align-content: space-between;
+         }
+         .grid div{
+             background-color: rgb(226, 66, 127);
+             display: flex;justify-content: center;align-items: center;
+             color: #fff;
+            
+         } */
+         /* التكليف السادس*/
+         /* .grid{
+            padding: 20px;
+            display: grid;
+            background-color: #ddd;
+            height:800px;
+            width:800px;
+            margin:  50px auto;
+            grid-template-columns: repeat ( 4 ,auto);
+            grid-template-rows:repeat(4, auto);
+            gap: 10px;
+            justify-content: space-between;
+         }
+         .grid div{
+             background-color: #333;
+             color: #fff;padding: 10px;
+         }
+         .one{
+             grid-area: 1/2;
+            }
+         .two {
+             grid-area: 2/1;
+         }
+         .three{
+            grid-area: 3/3;}
+        .four {
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+        .five{
+            grid-column:span 1;
+        }
+        .sex{
+            grid-column:span 1;
+        }
+        .seven{
+            grid-column:span 1;
+        }
+      .eight{
+          grid-column: span 1;
+      }
+      .night{
+          grid-column: span 1;
+      }
+      .ten{
+          grid-column: span 1;
+      } */
+
+
+       /*====================== tranform HomeWork ============================== */
+       /* 
+ .container{
+    background-color: #eee;
+    margin: 50px auto;
+    padding: 20px;
+    width: 800px ;height: 800px;
+    display: flex;justify-content: center;align-items: center;
+    transform-style: preserve-3d;
+}
+
+.container h1{
+ font-size: 30px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-weight: bold;
+ color: rgb(24, 31, 102);
+ background-color:#c2c7ca;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 300px;
+ height: 200px;
+ padding: 20px;
+ position: relative;
+}
+ .container h1::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: indigo;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform:rotate(-5deg) ;
+    -webkit-transform:rotate(-5deg) ;
+    -moz-transform:rotate(-5deg) ;
+    -ms-transform:rotate(-5deg) ;
+    -o-transform:rotate(-5deg) ;
+    z-index:-2;
+}
+ .container h1::after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(247, 9, 227);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform:rotate(5deg) ;
+    -webkit-transform:rotate(5deg) ;
+    -moz-transform:rotate(5deg) ;
+    -ms-transform:rotate(5deg) ;
+    -o-transform:rotate(5deg) ;
+    z-index:-1;
+}  */
+ /* التكليف الثاني    */
+ /* div{
+     margin: 100px auto;
+     background-color: #eee;
+     width: 200px;
+     height: 200px;
+     border-radius:50% ;
+     -webkit-border-radius:50% ;
+     -moz-border-radius:50% ;
+     -ms-border-radius:50% ;
+     -o-border-radius:50% ;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     transition: 0.5s;
+     -webkit-transition: 0.5s;
+     -moz-transition: 0.5s;
+     -ms-transition: 0.5s;
+     -o-transition: 0.5s;
+}
+div::before{
+    content: "";
+    width: 200px;
+    height: 200px;
+    position:absolute;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    border: 10px  solid;
+    border-color: red red red transparent;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+div::after{
+    content: "";
+    width: 220px;
+    height:220px;
+    position:absolute;
+    border-radius:50% ;
+    -webkit-border-radius:50% ;
+    -moz-border-radius:50% ;
+    -ms-border-radius:50% ;
+    -o-border-radius:50% ;
+    border: 10px  solid;
+    border-color: rgb(76, 0, 255)  transparent  rgb(76, 0, 255) rgb(76, 0, 255);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+div:hover::before{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+div:hover::after{
+    transform: rotate(1turn);
+    -webkit-transform: rotate(1turn);
+    -moz-transform: rotate(1turn);
+    -ms-transform: rotate(1turn);
+    -o-transform: rotate(1turn);
+} */
+
+/* .one{
+    margin:100px auto;
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    color: white;
+    display: flex;justify-content: center;align-items: center;
+    position: relative;
+}
+.one::after , .one::before{
+    content: "";
+    width: 150px;
+    height: 150px;
+    background-color: orange;
+    position: absolute;
+    top: 0;left: 0;
+    z-index: -1;
+}
+
+.one::before{
+    transform: skew(10deg , 10deg);
+    -webkit-transform: skew(10deg , 10deg);
+    -moz-transform: skew(10deg , 10deg);
+    -ms-transform: skew(10deg , 10deg);
+    -o-transform: skew(10deg , 10deg);
+    background-color: orange;
+}
+.one::after{
+    transform: skew(-10deg ,-10deg);
+    -webkit-transform: skew(-10deg ,-10deg);
+    -moz-transform: skew(-10deg ,-10deg);
+    -ms-transform: skew(-10deg ,-10deg);
+    -o-transform: skew(-10deg ,-10deg);
+    background-color: orange;
+}
+
+.two{
+    margin:100px auto;
+    width: 150px;
+    height: 100px;
+    background-color: rgb(118, 150, 238);
+    color: white;
+    display: flex;justify-content: center;align-items: center;
+    position: relative;
+}
+
+.two::before{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color:  rgb(118, 150, 238) ;
+    position: absolute;
+    left: -50px;
+    top: 0;
+    transform:skew(20deg) ;
+    -webkit-transform:skew(20deg) ;
+    -moz-transform:skew(20deg) ;
+    -ms-transform:skew(20deg) ;
+    -o-transform:skew(20deg) ;
+    z-index: -1;
+}
+.two::after{
+    content: " ";
+    width: 15%;
+    height: 100%;
+    background-color:  rgb(118, 150, 238) ;
+    position: absolute;
+    left: -90px;
+    top: 0;
+    transform:skew(20deg) ;
+    -webkit-transform:skew(20deg) ;
+    -moz-transform:skew(20deg) ;
+    -ms-transform:skew(20deg) ;
+    -o-transform:skew(20deg) ;
+    z-index: -1;
+}
+
+.three{
+    margin: 150px auto;
+    display: flex;
+    justify-content: center; align-items: flex-end;
+    width: 200px;height: 200px;
+    padding: 20px;
+    background-color: rgb(4, 44, 66);
+    color: white;
+    border-bottom: 5px #000 solid;
+    position: relative;
+}
+.three::before{
+    content: " ";
+    top: -66px;
+    left: 30px;;
+    width: 66%;
+    height: 66%;
+    background-color: #000;
+    border:5px solid;
+    position: absolute;
+    border-color:   transparent #fff #fff  transparent  ;
+    transform: rotate(44.5deg);
+    -webkit-transform: rotate(44.5deg);
+    -moz-transform: rotate(44.5deg);
+    -ms-transform: rotate(44.5deg);
+    -o-transform: rotate(44.5deg);
+}
+.four{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    color: white;
+    margin: 100px auto;
+    transition: 1s;
+    transform-style: preserve-3d;
+    
+}
+ 
+.four::before{
+    content: " Front ";
+    display: flex;justify-content: center;align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(228, 23, 135);
+    color:white;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    position: absolute;
+    top:0; left: 0;
+
+  
+}
+.box{
+    transform-style: preserve-3d;
+    perspective: 600PX;
+}
+.four::after{
+    content: " Back ";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(16, 26, 75);
+    color:white;
+    position: absolute;
+    top:0;
+    left: 0;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+}
+.four:hover{
+  transform: rotateX(10deg);
+  -webkit-transform: rotateX(10deg);
+  -moz-transform: rotateX(10deg);
+  -ms-transform: rotateX(10deg);
+  -o-transform: rotateX(10deg);
+} */
+
+/* animation Homework  */
+/* 
+.animate{
+    margin: 100px auto;
+    width: 200px;
+    height: 200px;
+    background-color:#eee;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: orangered transparent  orangered orangered;
+    position: relative;
+    animation-name: change-rotate;
+    animation-duration: 5s;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+ animation-delay: 1s;
+}
+.animate::before {
+    content: " ";
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    border: 10px solid;
+    border-color: royalblue transparent royalblue royalblue;
+    animation-name: change-rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+
+
+}
+.animate::after {
+    content: " ";
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    border: 10px solid;
+    border-color: orange transparent orange orange ;
+    animation-name: change-rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 6s;
+}
+
+.animate:hover ,.animate:hover::after ,.animate:hover::before{
+    animation-play-state: paused;
+}
+
+@keyframes change-rotate{
+    0%{
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+
+100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+} */
+
+
+<svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 79"><defs><style>.cls-2{fill:#181531;}</style></defs><title>footer-frame</title><path class="cls-2" d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z" transform="translate(0 -0.188)"></path></svg>
+
+<svg class="header-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 310"><defs><style>.cls-1{fill:#5f4def;}</style></defs><title>header-frame</title><path class="cls-1" d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z"></path></svg>
